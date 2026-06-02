@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frc-token-faucet-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_RPC_URL=${VITE_RPC_URL:-https://sepolia.infura.io/v3/YOUR_KEY}
+      - VITE_TOKEN_ADDRESS=${VITE_TOKEN_ADDRESS:-0x}
+      - VITE_FAUCET_ADDRESS=${VITE_FAUCET_ADDRESS:-0x}
+      - NODE_ENV=production
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+    restart: unless-stopped
+
+volumes:
+  # Optional: volumes for development
