@@ -257,18 +257,3 @@ A: Deployment script does it automatically (if ETHERSCAN_API_KEY set)
 | Lines of Code | 3,850+ |
 | Setup Time | ~5 minutes |
 | Deployment Time | ~5 minutes |
-
----
-
-## 📚 Resources
-
-- [Solidity Docs](https://docs.soliditylang.org/)
-- [Hardhat Docs](https://hardhat.org/docs)
-- [Ethers.js Docs](https://docs.ethers.org/)
-- [React Docs](https://react.dev/)
-- [Sepolia Faucet](https://faucet.sepolia.dev)
-
----
-
-**Version**: 1.0.0 | **Status**: Production Ready ✅ | **Network**: Sepolia
-Built with: Solidity, React, Hardhat, Docker
