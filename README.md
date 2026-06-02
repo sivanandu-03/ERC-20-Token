@@ -270,19 +270,5 @@ A: Deployment script does it automatically (if ETHERSCAN_API_KEY set)
 
 ---
 
-## ✅ Checklist Before Deployment
-
-- [ ] Dependencies installed (`npm install`)
-- [ ] .env file configured with valid keys
-- [ ] Tests pass (`npm run test`)
-- [ ] Contracts deployed (`npm run deploy`)
-- [ ] .env updated with contract addresses
-- [ ] Frontend builds (`npm run build`)
-- [ ] Docker runs (`docker compose up`)
-- [ ] MetaMask connects
-- [ ] Token claim works
-
----
-
 **Version**: 1.0.0 | **Status**: Production Ready ✅ | **Network**: Sepolia
 Built with: Solidity, React, Hardhat, Docker
